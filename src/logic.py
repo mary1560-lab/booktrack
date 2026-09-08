@@ -1,3 +1,4 @@
+# Core business logic: progress calculation, duplicates, and favorites
 def display_search_results(results):
     """
     Displays the search results in a numbered, clear format for the user to choose from.
