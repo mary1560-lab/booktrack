@@ -42,3 +42,44 @@ Start -> Main Menu -> Search Book -> Show Results -> Choose Book -> Choose Statu
 |---|---|
 | Hiba Thanaa | Project structure setup, Open Library API integration (`search_books`), core logic (`calculate_progress`, `is_duplicate`, `get_favorite_books`, `add_to_library`), main CLI menu (`main.py`), pytest unit tests, README, and final testing/debugging of the whole program. |
 | Ayham Abd Aljabbar | Implemented the library storage module (`load_library`, `save_library` in `storage.py`), helped write and refine the `display_search_results` function, reviewed the flowchart and requirements, and helped prepare the presentation slides and demo video script. |
+
+## 5. Scope
+
+**Must Have:**
+- Search for books via Open Library API.
+- Add books to a personal library with a status (Want to Read / Reading / Completed).
+- Track reading progress by page number.
+- Rate completed books (1-5).
+- View favorite books and a reading summary.
+- Persist data locally in JSON.
+- Handle errors gracefully (invalid input, no internet, book not found, duplicates).
+
+**Nice to Have (not implemented in this version):**
+- Editing or removing books from the library.
+- Search history.
+- Exporting the reading summary to a file.
+
+## 6. Data Schema
+
+Each book stored in `data/library.json` follows this structure:
+
+| Field | Type | Description |
+|---|---|---|
+| `title` | string | Book title |
+| `author` | string | Author name(s) |
+| `pages` | integer | Total number of pages (0 if unknown) |
+| `status` | string | One of: `want_to_read`, `reading`, `completed` |
+| `current_page` | integer | Current reading progress (0 if not started) |
+| `rating` | integer or null | Rating from 1-5, or null if not rated yet |
+
+Example:
+```json
+{
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "pages": 320,
+    "status": "reading",
+    "current_page": 120,
+    "rating": null
+}
+```
