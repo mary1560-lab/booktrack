@@ -1,3 +1,4 @@
+# Handles reading and writing the personal library to/from library.json
 import json
 import os
 
