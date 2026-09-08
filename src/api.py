@@ -1,3 +1,4 @@
+# Handles searching for books using the Open Library API
 import requests
 
 API_URL = "https://openlibrary.org/search.json"
