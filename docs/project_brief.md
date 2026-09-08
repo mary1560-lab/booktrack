@@ -40,5 +40,5 @@ Start -> Main Menu -> Search Book -> Show Results -> Choose Book -> Choose Statu
 
 | Member | Responsibility |
 |---|---|
-| Hiba Thanaa | Open Library API integration (`search_books`), core logic (`calculate_progress`, `is_duplicate`, `get_favorite_books`, `add_to_library`), library storage (`load_library`, `save_library`), main CLI menu (`main.py`), pytest unit tests, README, and final testing/debugging of the whole program. |
-| Ayham Abd Aljabbar | Reviewed the project requirements and flowchart, tested the CLI menu flow end-to-end, verified edge cases (invalid input, duplicate books, rating validation), and helped prepare the presentation slides and demo video script. |
+| Hiba Thanaa | Project structure setup, Open Library API integration (`search_books`), core logic (`calculate_progress`, `is_duplicate`, `get_favorite_books`, `add_to_library`), main CLI menu (`main.py`), pytest unit tests, README, and final testing/debugging of the whole program. |
+| Ayham Abd Aljabbar | Implemented the library storage module (`load_library`, `save_library` in `storage.py`), helped write and refine the `display_search_results` function, reviewed the flowchart and requirements, and helped prepare the presentation slides and demo video script. |
