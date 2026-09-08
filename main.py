@@ -1,3 +1,4 @@
+# Main CLI entry point connecting all BookTrack features
 from src.api import search_books
 from src.storage import load_library, save_library
 from src.logic import (
