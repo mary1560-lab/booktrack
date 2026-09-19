@@ -53,28 +53,28 @@ We use the `requests` library instead of the built-in `urllib` because it offers
 ## Usage Example
 ========== BOOKTRACK ==========
 
-Search for a Book
-My Library
-Update Reading Progress
-Rate a Completed Book
-Favorite Books
-Reading Summary
-Exit
+1. Search for a Book
+2. My Library
+3. Update Reading Progress
+4. Rate a Completed Book
+5. Favorite Books
+6. Reading Summary
+7. Exit
 ================================
 Enter your choice: 1
 Enter a book title or author: atomic habits
 
 ===== Search Results =====
 
-Atomic Habits - James Clear (2018) | Pages: 320
+1. Atomic Habits - James Clear (2018) | Pages: 320
 ...
 Choose a book number to add it (or press Enter to skip): 1
 
 Choose the book status:
 
-1-Want to Read
-2-Reading
-3-Completed
+1. Want to Read
+2. Reading
+3. Completed
 Your choice: 2
 'Atomic Habits' was added to your library with status: reading
 
@@ -93,7 +93,9 @@ Your choice: 2
 
 ## Project Structure
 booktrack/
-├── main.py # Main menu, connects all parts
+├── main.py # Full app menu (search, track, rate, favorites, summary)
+├── project.py # CS50P submission entry point (main + 3 required functions)
+├── test_project.py # CS50P required tests for project.py
 ├── src/
 │ ├── api.py # search_books() - Open Library API integration
 │ ├── storage.py # load_library() / save_library() - JSON persistence
@@ -101,10 +103,12 @@ booktrack/
 ├── data/
 │ └── library.json # Personal library data
 ├── tests/
-│ └── test_logic.py # pytest unit tests
-├── docs/ # Project planning documents
+│ └── test_logic.py # pytest unit tests for the full app
+├── docs/ # Project brief, scope, flowchart, data schema, tasks
+├── presentation/ # Project presentation slides
 ├── requirements.txt
 └── README.md
+
 
 ## Error Handling Covered
 
@@ -121,7 +125,7 @@ Run all unit tests with:
 ```bash
 pytest -v
 ```
-9 tests cover progress calculation, duplicate detection, favorites filtering, and adding books.
+12 tests total: 9 in `tests/test_logic.py` covering the full application's core logic, and 3 in `test_project.py` covering the CS50P submission entry point (`project.py`).
 
 ## Known Limitations
 
