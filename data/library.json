@@ -1,17 +1,57 @@
 [
     {
-        "title": "Atomic Habits",
-        "author": "James Clear",
-        "pages": 320,
-        "status": "reading",
-        "current_page": 120,
-        "rating": null
-    },
-    {
-        "title": "Harry Potter and the Chamber of Secrets",
+        "title": "Harry Potter and the Deathly Hallows",
         "author": "J. K. Rowling",
         "pages": 0,
         "status": "completed",
+        "current_page": 0,
+        "rating": null
+    },
+    {
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "author": "J. K. Rowling",
+        "pages": 0,
+        "status": "reading",
+        "current_page": 0,
+        "rating": null
+    },
+    {
+        "title": "Heretics of Dune",
+        "author": "Frank Herbert",
+        "pages": 0,
+        "status": "completed",
+        "current_page": 0,
+        "rating": 5
+    },
+    {
+        "title": "SparkNotes for 1984 by George Orwell",
+        "author": "Spark Publishing, SparkNotes",
+        "pages": 0,
+        "status": "want_to_read",
+        "current_page": 0,
+        "rating": null
+    },
+    {
+        "title": "Nineteen Eighty-Four",
+        "author": "George Orwell, George Orwell, Georges Orwell, Gorge Gorge Orwell, George Orwell, george orwell",
+        "pages": 0,
+        "status": "reading",
+        "current_page": 0,
+        "rating": null
+    },
+    {
+        "title": "Animal Farm / Nineteen Eighty-Four",
+        "author": "George Orwell, G Orwell, George Orwel, George Orwell",
+        "pages": 0,
+        "status": "want_to_read",
+        "current_page": 0,
+        "rating": null
+    },
+    {
+        "title": "1984 (adaptation)",
+        "author": "Michael Dean, George Orwell",
+        "pages": 0,
+        "status": "reading",
         "current_page": 0,
         "rating": null
     }
